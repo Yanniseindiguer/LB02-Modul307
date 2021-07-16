@@ -1,0 +1,146 @@
+:root {
+    --error-color: #da2814;
+    --success-color: #0fdf66;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-size: cover;
+    background-color: rgb(46, 46, 46);
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    width: 600px;
+}
+
+
+header {
+    height: 50px;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    /* bottom: 0;*/
+    left: 0;
+    visibility: hidden;
+    font-size: .75rem;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.radiobutton {
+    display: flex;
+    justify-content: space-between;
+    width: 16.5vw;
+    flex-wrap: nowrap;
+
+}
+
+.radiobutton p {
+    width: 10vw;
+    margin: 1vh 0vh;
+    height: 5vh;
+
+}
+
+.radiobutton input {
+    width: 10vw;
+    margin: 1vh 0vh;
+    height: 1.5vh;
+
+}
+
+.checkboxanordnung {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    flex-wrap: nowrap;
+
+}
+
+.checkboxanordnung input {
+    width: 5vw;
+    margin: 1vh 0vh;
+    height: 2vh;
+
+
+}
+
+.checkboxanordnung label {
+    width: 10vw;
+    margin: 1vh 0vh;
+    height: 5vh;
+
+}
